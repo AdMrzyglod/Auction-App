@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+}
+
+
+
+.intro{
+    background-image: url("../../data/home.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}   
+
+
+.company-name{
+    position: absolute;
+    top: 9rem;
+    left: 40%;
+    transform: translateX(-50%);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: midnightblue;
+    background-color: silver;
+    opacity: 0.8;
+}
+
+.company-name p{
+    font-size: 3rem;
+}
+
+
+.company-ad{
+    position: absolute;
+    top: 18rem;
+    left: 42%;
+    transform: translateX(-50%);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: midnightblue;
+    background-color: silver;
+    opacity: 0.8;
+    max-width: 25rem;
+}
+
+.company-ad p{
+    font-size: 2.5rem;
+}
+
+.company-button{
+    position: absolute;
+    top: 36rem;
+    left: 42%;
+    transform: translateX(-50%);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: midnightblue;
+    background-color: silver;
+    opacity: 0.8;
+    max-width: 25rem;
+}
+
+.company-button a{
+    text-decoration: none;
+    border: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: blue;
+    padding: 1.7rem;
+    background-color: gold;
+    cursor: pointer;
+}
+
+.company-button a:hover{
+    background-color: goldenrod;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-end;
+    padding: 3rem 4rem;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    gap: 3rem;
+}
+
+
+.info h2{
+    font-size: 1.2rem;
+}
+
+.info-contact,.info-description{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.info-contact p, .info-description p{
+    font-size: 1.2rem;
+}
+
+.info-contact div, .info-description div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+@media (max-width: 650px) {
+
+    .info{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box{
+        min-height: 135vh;
+    }
+
+}

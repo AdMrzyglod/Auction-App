@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+
+.box-login{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 8rem 5%;
+    min-height: 95vh;
+    background-color: silver;
+}
+
+
+.box-login h2{
+    align-self: center;
+    font-size: 4rem;
+    color: midnightblue
+}
+
+
+
+.input-login label{
+    color: grey;
+    align-self: flex-start;
+    font-size: 2.5rem;
+}
+
+.input-login{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.2rem solid dimgrey;
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0 1rem 0 1rem;
+    min-width: 20rem;
+    max-width: 70rem;
+    width: 100%;
+}
+
+
+.input-login input{
+    font-size: 1.5rem;
+    background-color: transparent;
+    outline: none;
+    padding: 0.7rem;
+    border: 0.2rem solid grey;
+}
+
+.input-login input:focus{
+    border-color: forestgreen;
+}
+
+
+
+
+.login-button{
+    border: none;
+    color: midnightblue;
+    background-color: royalblue;
+    font-size: 2.2rem;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 2rem;
+    border: 0.2rem solid grey
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+    .box-login{
+        padding: 8rem 5%;
+    }
+
+    .input-login{
+        min-width: none;
+        width: 100%;
+    }
+
+}

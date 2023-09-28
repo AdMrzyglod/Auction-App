@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.input-filter label{
+    color: grey;
+    align-self: flex-start;
+    font-size: 1.8rem;
+}
+
+.input-filter{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 28rem;
+    border-radius: 0 1rem 0 1rem;
+}
+
+
+.input-filter input{
+    font-size: 1.5rem;
+    background-color: transparent;
+    outline: none;
+    padding: 0.7rem;
+    border: 0.2rem solid grey;
+}
+
+.input-filter input:focus{
+    border-color: forestgreen;
+}

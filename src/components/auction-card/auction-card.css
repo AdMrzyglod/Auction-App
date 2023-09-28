@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid dimgrey;
+    max-width: 80rem;
+    background-color: white;
+}
+
+
+.picture-card,.img-card{
+    display: block;
+    max-width: 20rem;
+    height: auto;
+    align-self: center;
+}
+
+.img-card{
+    border: 0.2rem solid blue;
+}
+
+
+
+.content-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 3rem;
+    padding-bottom: 1rem;
+}
+
+
+.content-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.content-details div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.content-details div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5rem;
+}
+
+.content-details div div p{
+    font-size: 1rem;
+    color: dimgrey;
+}
+
+.content-details div div p:last-child{
+    color: black;
+}
+
+.content-details h2{
+    font-size: 1.5rem;
+    color: midnightblue;
+}
+
+
+.price-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-left: 0.2rem solid dimgrey;
+    padding-left: 1.5rem;
+}
+
+
+.price-box .product-price, .price-box .timer,.price-box .auction-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+
+.price-box .product-price p, .price-box .timer p{
+    font-size: 1.1rem;
+}
+
+.price-box .auction-details a{
+    text-decoration: none;
+    color: darkblue;
+    background-color: green;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.price-box .auction-details a:hover{
+    background-color: darkgreen;
+}
+
+
+.price-box div p:first-child{
+    color: dimgrey;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .content-box{
+        gap: 2rem;
+    }
+
+    .picture-card,.img-card{
+        max-width: 17rem;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .card{
+        flex-direction: column;
+        width: fit-content;
+        max-width: 50rem;
+    }
+
+    .price-box{
+        flex-direction: row;
+        border: none;
+        gap: 1.4rem;
+        border-top: 0.2rem solid dimgrey;
+        padding: 1.2rem 3rem;
+    }
+
+    .content-details div div{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .content-box{
+        align-self: flex-start;
+    }
+    .picture-card,.img-card{
+        max-width: 16rem;
+    }
+
+    .content-details h2{
+        font-size: 1.4rem;
+    }
+    
+}

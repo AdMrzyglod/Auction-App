@@ -1,0 +1,272 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+
+.box-auction{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 8rem 10%;
+    min-height: 95vh;
+    background-color: silver;
+    z-index: 1;
+}
+
+
+
+.first-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    min-width: 51rem;
+    max-width: 90rem;
+    width: 100%;
+}
+
+
+.inform,.inform-details,.inform-desc{
+    border: 0.2rem solid dimgrey;
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+}
+
+
+.inform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+
+.inform-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    gap: 1rem;
+}
+
+.inform-details p{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 0.2rem solid grey;
+    border-radius: 0 1rem 0 1rem;
+    color: black;
+}
+
+.inform-details span{
+    color: grey;
+    font-size: 1.2rem;
+}
+
+
+.inform-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inform-desc p{
+    font-size: 1.4rem;
+
+}
+
+
+.inform-desc p:first-child{
+    color:grey
+}
+
+
+
+.inform h2{
+    align-self: flex-start;
+    font-size: 2rem;
+}
+
+
+.second-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    min-width: 31rem;
+    max-width: 36rem;
+    width: 100%;
+}
+
+
+.auction-panel,.user-box{
+    border: 0.2rem solid dimgrey;
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+}
+
+
+
+.auction-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.8rem;
+}
+
+
+.auction-panel>p{
+    font-size: 1.4rem;
+}
+
+
+.auction-panel-box{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.auction-panel-box p{
+    font-size: 1.5rem;
+}
+
+.auction-panel h2{
+    font-size: 2.5rem;
+}
+
+.auction-panel-box p:first-child,.auction-panel-input label,.auction-panel>p{
+    color: grey;
+}
+
+
+.auction-panel-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+
+}
+
+.auction-panel-input label{
+    font-size: 1.5rem;
+}
+
+
+.auction-panel-input input{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 9rem;
+}
+
+
+.auction-panel-input button{
+    border: none;
+    color: midnightblue;
+    background-color: gold;
+    font-size: 2.2rem;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.auction-panel-input button:hover{
+    background-color: goldenrod;
+}
+
+.auction-panel h2,.inform h2{
+    color: midnightblue;
+}
+
+
+.user-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+
+.user-box p{
+    font-size: 1.5rem;
+}
+
+.user-box div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.user-box p:first-child{
+    color: grey;
+}
+
+
+.backButton{
+    text-decoration: none;
+    position: absolute;
+    top: 1.2em;
+    left: 1rem;
+    border: none;
+    background-color: dodgerblue;
+    color: black;
+    font-weight: bold;
+    padding: 0.9rem 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 0.2rem solid blue;
+}
+
+
+.backButton:hover{
+    background-color: darkblue;
+}
+
+
+
+.offerError{
+    font-size: 1.2rem;
+    color: red;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+
+
+    .box-auction{
+        flex-direction: column;
+        padding: 8rem 3%;
+    }
+    .first-box{
+        min-width: 20rem;
+    }
+    .second-box{
+        max-width: none;
+        min-width: none;
+    }
+
+}
+
+

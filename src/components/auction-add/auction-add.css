@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+
+.box-add{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 8rem 15%;
+    min-height: 95vh;
+    background-color: silver;
+}
+
+
+.box-add h2{
+    align-self: flex-start;
+    font-size: 4rem;
+    color: midnightblue
+}
+
+
+
+.input-box label{
+    color: grey;
+    align-self: flex-start;
+    font-size: 2.5rem;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.2rem solid dimgrey;
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0 1rem 0 1rem;
+}
+
+
+.input-box input{
+    font-size: 1.5rem;
+    background-color: transparent;
+    outline: none;
+    padding: 0.7rem;
+    border: 0.2rem solid grey;
+}
+
+.input-box input:focus{
+    border-color: forestgreen;
+}
+
+.areabox{
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 10rem;
+    overflow-y: auto;
+    resize: none;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid grey;
+}
+
+
+.areabox:focus{
+    border-color: forestgreen;
+}
+
+
+.add-button{
+    border: none;
+    color: midnightblue;
+    background-color: royalblue;
+    font-size: 2.2rem;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 2rem;
+    border: 0.2rem solid grey
+}
+
+
+.add-button:hover{
+    background-color: blue;
+}
+
+
+.content{
+    width: fit-content;
+}
+
+
+.select-add{
+    border: 0.2rem solid grey;
+    align-self: center;
+    width: 20rem;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+}
+
+
+.select-add option{
+    font-size: 1.5rem;
+    padding: 0.7rem;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem
+}
+
+
+
+@media screen and (max-width: 1050px) {
+
+
+    .box-add{
+        padding: 8rem 8%;
+    }
+
+}

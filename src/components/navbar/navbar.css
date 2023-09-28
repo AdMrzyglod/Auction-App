@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+
+nav{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.ul-navbar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+li{
+  cursor: pointer;
+}
+
+
+li a, .dropbtn {
+  display: inline-block;
+  color: gold;
+  text-align: center;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightgrey;
+  min-width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1.4rem 1.9rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.dropdown-content a:hover {background-color: blue;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.ul-navbar>div{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.logout-button{
+   background-color: transparent;
+   border: none;
+   color: gold;
+   text-align: center;
+   padding: 1.2rem 1.6rem;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+
+.logout-button:hover{
+  background-color: blue;
+}
+
+
+
+.login-user p{
+  color:steelblue;
+  text-align: center;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.5rem;
+}
