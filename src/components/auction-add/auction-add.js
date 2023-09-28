@@ -115,7 +115,7 @@ export default function AuctionAdd(){
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        //let urls = await uploadFilesAndGetURLs(files);
+        let urls = await uploadFilesAndGetURLs(files);
 
         const formData = {
             name: name,
@@ -126,7 +126,7 @@ export default function AuctionAdd(){
             location: location,
             startPrice: parseFloat(startPrice),
             description: description,
-            files: files,
+            files: urls,
             endPrice: parseFloat(startPrice),
             uid: currentUser.uid,
             createDate: serverTimestamp()
@@ -134,7 +134,7 @@ export default function AuctionAdd(){
 
         console.log(formData)
         
-        //await addAuction(formData);
+        await addAuction(formData);
 
         return <Navigate to="/auction-history" replace/>
     };
