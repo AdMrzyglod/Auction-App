@@ -131,8 +131,6 @@ export default function AuctionAdd(){
             uid: currentUser.uid,
             createDate: serverTimestamp()
         };
-
-        console.log(formData)
         
         await addAuction(formData);
 

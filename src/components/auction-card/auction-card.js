@@ -5,8 +5,6 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function AuctionCard(props){
 
-    let timeLeft='00:00:00:00'
-
     let url= useLocation().pathname;
 
     return(

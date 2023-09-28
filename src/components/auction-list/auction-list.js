@@ -36,7 +36,6 @@ export default function AuctionList(){
 
         let filterOffersPattern = filterOffers.filter((offer)=>{
           let patternParts = pattern.split(" ").filter((part)=> {return part!==""});
-          console.log(patternParts)
           return patternParts.some((part) => offer.name.toLowerCase().includes(part.toLowerCase())) || pattern === "";
         });
 
